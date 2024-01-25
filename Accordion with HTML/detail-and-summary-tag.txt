@@ -1,0 +1,26 @@
+Accordion: 
+Disclosure widget is a user interface control that hides and shows content.
+the <detail> and <sumary> html tag is very useful to make a accordion.
+
+The accordion graphical user interface is a series of vertically stacked disclosure widgets. A common use 
+case for the accordion UI is the Frequently Asked Questions (FAQ) page on many sites. An accordion FAQ 
+contains a list of visible questions; clicking on a question expands, or "discloses", the answer to that 
+question.
+
+
+The HTML details tag is an HTML element used to create a collapsible section of content on a page. It's 
+like a digital toggle switch that lets users expand or collapse additional information with a click.
+
+Here's the syntax of the details tag:
+
+<details>
+    <summary>Summary Text</summary>
+    <!-- hidden content -->
+</details>
+<details> is the main container element. It encapsulates the content you want to make expandable and 
+collapsible.
+
+Next, <summary> is placed inside <details> as the first child element. The <summary> serves as the title or 
+heading for the collapsible section and is visible when the page loads. When users click on it, the hidden 
+content inside <details> is revealed. When <summary> is clicked again, the content is hidden.
+
