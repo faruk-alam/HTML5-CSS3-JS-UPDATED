@@ -24,3 +24,22 @@ Next, <summary> is placed inside <details> as the first child element. The <summ
 heading for the collapsible section and is visible when the page loads. When users click on it, the hidden 
 content inside <details> is revealed. When <summary> is clicked again, the content is hidden.
 
+Attributes of <detail> and <summary> tag :
+
+The <details> element supports the Global Attributes:
+
+open state of <detail> tag:
+
+The open attribute is a boolean attribute, which if present indicates that both the summary and detail 
+information should be shown to the user. An example is as follows:
+
+<details open>
+  <summary>Detail</summary>
+  Text summary describing more about the detail.
+</details>
+Detail
+
+Style the <summary> tag:
+The <summary> element supports the list-style property, so to remove the default triangle we can use 
+list-style: none (css property); to remove it
+
