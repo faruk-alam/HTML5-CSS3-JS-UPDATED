@@ -1,0 +1,44 @@
+HTML attributes are data that can be added to the opening tag of an HTML element. Attributes are 
+space-separated names and name/value pairs appearing in the opening tag, providing information 
+about and functionality for the element.
+These attributes modify the default behavior of the element or provide additional information about it.
+
+Attributes consist of a name and are usually set equal to a value. Values are enclosed in double or single 
+quotation marks.
+
+HTML Global Attributes are those attributes that are common to all HTML tags/elements.
+
+List of Global Attributes in HTML
+Here are some global attributes and details :
+
+HTML id Attribute -
+<tag id="value" />
+VALUE	DESCRIPTION
+value	A unique alphanumeric string. The id value must begin with a letter ([A-Za-z]) and may be followed 
+by any number of letters, digits ([0-9]), hyphens (-), underscores (_), colons (:), and periods (.).
+The id attribute on an element assigns an identifier to that element.
+The identifier must be unique across the page.
+The id is a global attribute that can be applied to any HTML element.
+
+HTML class Attribute -
+<tag class="classname" />
+VALUE	DESCRIPTION
+classname	One or more space-separated classnames. A classname can only have alphanumeric characters 
+with hypens (-) and underscores (_). Classnames are case-sensitive, but the convention is to use lower-case 
+names.
+The class attribute assigns one or more classnames to an element.
+Classnames are defined in a stylesheet or in a local <style> element.
+Classes, i.e. classnames, are used to style elements.
+
+HTML autocapitalize Attribute - 
+<tag autocapitalize="off | none | on | sentences | words | characters" />
+VALUE	DESCRIPTION
+off | none	Text will not be capitalized.
+on | sentences	The first letter of each sentence will be capitalized.
+words	The first letter of each word will be capitalized.
+characters	The entire text will be capitalized.
+The autocapitalize attribute specifies that the text entered by the user should automatically be capitalized.
+This is a global attribute that can be applied to any tag.
+
+
+
