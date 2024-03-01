@@ -40,5 +40,35 @@ characters	The entire text will be capitalized.
 The autocapitalize attribute specifies that the text entered by the user should automatically be capitalized.
 This is a global attribute that can be applied to any tag.
 
+HTML contenteditable Attribute -
+The contenteditable attribute specifies that an element is editable in-line.
+Clicking on the element places the text in edit mode.
+
+Syntax:
+<tag contenteditable="true|false" />
+
+Value :                     
+
+VALUE	                                       DESCRIPTION
+true	                                       Allows the element to be editable.
+false	                                       Disallows the element to be editable.
+
+
+HTML draggable Attribute -
+The draggable attribute on an element specifies that the element can be dragged.
+All visual elements can be made draggable with this attribute.
+
+Synta :
+<tag draggable="true | false | auto" />
+
+Values :
+VALUE	                     DESCRIPTION
+true	                     Allows the element to be dragged.
+false	                     Prevents the element to be dragged.
+auto	                     Use the browser's default behavior. This is also the default.
+
+
+
+
 
 
