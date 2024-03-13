@@ -68,7 +68,23 @@ false	                     Prevents the element to be dragged.
 auto	                     Use the browser's default behavior. This is also the default.
 
 
+HTML spellcheck Attribute -
+The spellcheck attribute specifies that an element should be checking for spelling errors.
+It can be applied to elements that accept user input.
 
+Syntax:
+<tag spellcheck="true|false" />
 
+Values:
+VALUE	          DESCRIPTION
+true	          Element should be checked for spelling errors.
+false	          Element should not be checked for spelling errors.
 
+Using spellcheck:
+The spellcheck attribute is a hint to the browser to check an element for spelling errors.
+This attribute is used with input,textarea,and elements with the contenteditable attribute set to true.
+Non-editable elements are usually not checked for spelling errors.
+The spellcheck value is inherited.If a parent element has spellcheck set, then its child elements will be 
+spellchecked.
+If not set, the browser's default spellcheck functionality will be used.
 
