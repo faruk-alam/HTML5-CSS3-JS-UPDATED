@@ -88,3 +88,28 @@ The spellcheck value is inherited.If a parent element has spellcheck set, then i
 spellchecked.
 If not set, the browser's default spellcheck functionality will be used.
 
+HTML hidden Attribute -
+The HTML hidden Attribute, a boolean attribute, hides elements from display in browsers. It’s useful for 
+elements not yet relevant or hidden until certain conditions are met via JavaScript.
+
+Syntax
+<element hidden>
+Note: This attribute is new in HTML 5.
+
+HTML dir Attribute -
+The HTML dir attribute specifies the text directionality, allowing content to be displayed from left-to-right
+ (ltr), right-to-left (rtl), or determined automatically (`auto`) by the browser based on content.
+
+Supported Tags: It supports all HTML elements. 
+
+Syntax
+<element dir = "ltr | rtl | auto">
+Attribute Value
+This attribute contains three values which are listed below: 
+
+Value	            Description
+ltr	                Default value. Text direction left-to-right.
+rtl	                Text direction right-to-left.
+auto	            Text direction determined by browser based on content.
+
+
