@@ -1,0 +1,314 @@
+                                        HTML Lists
+HTML lists are used to display related information in an easy-to-read and concise way as lists.
+   
+We can use three types of lists to represent different types of data in HTML:
+
+Unordered List <ul>
+Ordered List <ol>
+Description List <d
+
+Unordered List
+The unordered list is used to represent data in a list for which the order of does not matter.
+We can use an unordered list for keeping track of groceries, supplies and random objects
+
+In HTML, we use the <ul> tag to create unordered lists. Each item of the list must be a <li> tag which 
+represents list items. For example,
+
+<ul>
+  <li>Apple</li>
+  <li>Orange</li>
+  <li>Mango</li>
+</ul>
+
+Here, <li>Apple</li>, <li>Orange</li>, and <li>Mango</li> are the list items.
+
+Unordered Lists Marker
+We use the CSS list-style-type property to change the marker that marks the list item. The valid options for 
+markers are -
+
+Icon	               Marker	           Description
+• (default)	           disc	          sets the marker to a dot
+○	                   circle	      sets the marker to a hollow circle
+▪	                   square	      sets the marker to a filled black square
+	                   none           removes the marker altogether
+
+
+Nesting Lists of Unordered list :
+In HTML, we can create a nested list by adding one list inside another. 
+For example :
+
+ <ul>    
+    <li>
+      Coffee
+      <ul>
+        <li>Cappuccino</li>
+        <li>Americano</li>
+        <li>Espresso</li>
+      </ul>
+    </li>
+    <li>
+      Tea
+      <ul>
+        <li>Milk Tea</li>
+        <li>Black Tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+
+In the above example, you can see we have added unordered lists inside another unordered list.
+In this case, the first and second list items of the outer unordered list include unordered lists.
+
+Ordered List :
+The ordered list is used to represent data in a list for which the order of items has significance.
+We can use the HTML ordered list for recipes, algorithms, top ten lists, and so on.
+
+The <ol> tag is used to create ordered lists. Similar to unordered lists, each item in the ordered list must 
+be a <li> tag. 
+For example :
+
+<ol>
+  <li>Ready</li>
+  <li>Set</li>
+  <li>Go</li>
+</ol>
+
+Each item of the list is enclosed inside the <li> tag and they are numbered by decimal numbers.
+By default, ordered lists are ordered by numbers, however, we can change them as per our choice.
+
+Ordered Lists Type
+We use the type attribute to change the marker for the list. There are five types of numbering in the 
+ordered list. They are
+
+Type	                          Description
+"1"(Default) 	         The list is numbered with numbers.
+"a"	                     The list is numbered with lower-case alphabets.
+"A"	                     The list is numbered with upper-case alphabets.
+"i"	                     The list is numbered with lower-case roman numerals.
+"I"	                     The list is numbered with upper-case roman numerals.
+
+start Attribute
+We use the start attribute to change the starting point for the numbering of the list. 
+For example :
+
+  <ol start='5'>
+    <li>Harry</li>
+    <li>Ron</li>
+    <li>Sam</li>
+  </ol>
+  Here, we change the starting value of the list to 5.
+  This attribute also works with other types. For example,
+
+  <ol type="a" start='5'>
+    <li>Harry</li>
+    <li>Ron</li>
+    <li>Sam</li>
+  </ol>
+  Similarly, we can use the start attribute along with all other types.
+
+reversed Attribute
+We can use the reversed attribute on the ordered list to reverse the numbering on the list. 
+For example :
+
+  <ol reversed>
+    <li>Cat</li>
+    <li>Dog</li>
+    <li>Elephant</li>
+    <li>Fish</li>
+  </ol>
+
+  Nesting Lists
+In HTML, we can create a nested list by adding one list inside another. 
+For example :
+
+<ol type="I">
+  <li>
+    Chapter 1
+    <ol type="a">
+      <li>Lesson 1</li>
+      <li>Lesson 2</li>
+    </ol>
+  </li>
+  <li>
+    Chapter 2
+    <ol type="a">
+      <li>Lesson 1</li>
+      <li>Lesson 2</li>
+      <li>Lesson 3</li>
+    </ol>
+  </li>
+  <li>
+    Chapter 3
+    <ol type="a">
+      <li>Lesson 1</li>
+    </ol>
+  </li>
+</ol>
+
+
+
+
+HTML Ordered List
+We use the HTML ordered list to define a list where the sequence or order of the list items is important. We can use the HTML ordered list for recipes, algorithms, top ten lists, and so on.
+
+We use the <ol> tag to create an unordered list. For example,
+
+<ol>
+  <li>Name</li>
+  <li>Address</li>
+  <li>Phone Number</li>
+</ol>
+Browser Output
+
+An HTML ordered list
+Each item of the list is enclosed inside the <li> tag and they are numbered by decimal numbers.
+
+By default, ordered lists are ordered by numbers, however, we can change them as per our choice.
+
+Ordered Lists Type
+We use the type attribute to change the marker for the list. There are five types of numbering in the ordered list. They are
+
+Type	Description
+"1"(Default) 	The list is numbered with numbers.
+"a"	The list is numbered with lower-case alphabets.
+"A"	The list is numbered with upper-case alphabets.
+"i"	The list is numbered with lower-case roman numerals.
+"I"	The list is numbered with upper-case roman numerals.
+Below, we can see examples for all the number types.
+
+HTML ordered list with 5 types of markers.
+start Attribute
+We use the start attribute to change the starting point for the numbering of the list. For example,
+
+  <ol start='5'>
+    <li>Harry</li>
+    <li>Ron</li>
+    <li>Sam</li>
+  </ol>
+Browser Output
+
+An HTML ordered list starting at number 5
+Here, we change the starting value of the list to 5.
+
+
+This attribute also works with other types. For example,
+
+  <ol type="a" start='5'>
+    <li>Harry</li>
+    <li>Ron</li>
+    <li>Sam</li>
+  </ol>
+Browser Output
+
+An HTML ordered list starting at e 
+Similarly, we can use the start attribute along with all other types.
+
+reversed Attribute
+We can use the reversed attribute on the ordered list to reverse the numbering on the list. For example,
+
+  <ol reversed>
+    <li>Cat</li>
+    <li>Dog</li>
+    <li>Elephant</li>
+    <li>Fish</li>
+  </ol>
+Browser Output
+
+An HTML ordered list with reversed order
+Here, we can see the order of the list is reversed, the first list item is numbered 4 and the last is numbered 1.
+
+Similarly, the reversed attribute can also be used with other types and in conjunction with the start attribute. For example,
+
+ <ol reversed type="I" start="10">
+    <li>Cat</li>
+    <li>Dog</li>
+    <li>Elephant</li>
+    <li>Fish</li>
+</ol>
+Browser Output
+
+An HTML ordered list with reversed order starting at 'X'
+In the above example, we use the upper-case roman numeral type and start at 10 and reverse the order of the numbers.
+
+Nesting Lists
+In HTML, we can create a nested list by adding one list inside another. For example,
+
+<ol type="I">
+  <li>
+    Chapter 1
+    <ol type="a">
+      <li>Lesson 1</li>
+      <li>Lesson 2</li>
+    </ol>
+  </li>
+  <li>
+    Chapter 2
+    <ol type="a">
+      <li>Lesson 1</li>
+      <li>Lesson 2</li>
+      <li>Lesson 3</li>
+    </ol>
+  </li>
+  <li>
+    Chapter 3
+    <ol type="a">
+      <li>Lesson 1</li>
+    </ol>
+  </li>
+</ol>
+Browser Output
+
+HTML ordered lists nested inside another ordered list
+In the above example, you can see we have added an ordered list inside another ordered list.
+
+In this case, the list item of the outer ordered list also includes an ordered list.
+
+Similarly, we can also mix list types while nesting and add an unordered list inside the 
+ordered list. 
+For example :
+
+<ol>
+  <li>
+    Prepare the ingredients.
+    <ul>
+      <li>Eggs</li>
+      <li>Salt</li>
+      <li>Butter</li>
+    </ul>
+  </li>
+  <li>
+    Mix the ingredients and cook on a low flame. 
+  </li>
+  <li>
+    Serve hot with garnish. You can use
+    <ul>
+      <li>Chives</li>
+      <li>Bacon</li>
+      <li>Coriander</li>
+    </ul>
+  </li>
+</ol>
+
+Note: In our examples, we are nesting the list up to a single level, however, we can also nest lists up to 
+multiple levels.
+
+HTML Description List
+We use the HTML description list to create a list where list items include terms and descriptions of the term.
+
+In HTML, we use the <dl> tag to create a description list. For example,
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
+
+Here, you can see two different types of list items:
+
+<dt>(dt = description title) - defines the terms/name
+<dd>(dd = discription data) - defines the description/value of the term/name
+You can see the description list includes two related values, hence it can also be used to store items 
+in key/value pairs.
+
+Since the description list includes the definition of a term, it is also known as the definition list.

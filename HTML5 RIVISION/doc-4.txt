@@ -1,0 +1,76 @@
+                                        HTML Image
+
+The HTML <img> tag embeds an image within the HTML web page. 
+For example :
+<img src="logo.png">
+Here, the <img> tag inserts the image logo.png on the webpage.
+Note: The <img> tag is an empty tag, i.e. It doesn't require a closing tag.             
+
+The HTML image tag has 2 important attributes:
+
+The src attribute
+The alt attribute
+
+HTML Image src Attribute
+The src attribute is a required attribute for the <img> tag. It specifies the path (URL) to the image. 
+ùIt tells the browser where to look for the image. 
+For example :
+
+<img src="tictactoe.png" >
+
+In the above example, the src attribute tells the browser to load the image from the same directory where 
+the webpage is located.
+
+Similarly, if the image is stored in a subdirectory, the path in the src attribute would be written as
+
+<img src="images/tictactoe.png" >
+If the image is located on another server entirely or if we want to use an image from the web, we can 
+provide an absolute URL for the image. 
+For example :
+
+<img src="https://www.example.com/images/tictactoe.png">
+
+Note: Although we can provide an absolute path for images located in our own web server, better to 
+provide a relative path as it leads to faster loading times. Hence always use relative paths for images 
+in your own server.
+
+HTML Image alt Attribute
+The alt attribute is the text description of an image. The value of the alt attribute should describe the 
+image such that the content is meaningful even if the image fails to load.
+
+<img src="computer.png" alt=" A standard Computer" >
+
+The alt attribute's contents are shown if the user cannot view the image (slow internet, wrong src attribute, 
+or using a screen reader).
+
+It also helps in SEO as it helps the search engine understand what images are about.
+
+HTML Image title Attribute
+The title attribute displays the information about the image when the user hovers over the image. 
+For example :
+
+<img src="tictactoe.png" alt="A game of tic-tac-toe" title="Tic-Tac-Toe" />
+
+Note: Although alt and title attributes appear similar, the title attribute cannot be used as an alternative 
+to the alt attribute. The title is not read by screen readers and does not display when the image fails to 
+load.
+
+HTML Image Size - Width and Height
+We can use the style attribute to specify the height and width of an Image. 
+
+For example :
+<img src="tictactoe.jpg" alt="A game of tic-tac-toe" style="width: 200px; height: 200px;">
+
+Alternatively, we can also use the height and width attributes to set the height and width. 
+
+For example :
+<img src="tictactoe.jpg" alt="A game of tic-tac-toe" width="200" height="200">
+
+Common Image Formats :
+
+Format	        File Format	                                       Extension
+GIF	            Graphics Interchange Format	                        .gif
+PNG	            Portable Network Graphics	                        .png
+SVG	            Scalable Vector Graphics	                        .svg
+JPEG	        Joint Photographic Expert Group image	            .jpg, .jpeg
+WEBP	        Web Picture	                                        .webp

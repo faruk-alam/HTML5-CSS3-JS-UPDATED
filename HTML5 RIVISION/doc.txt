@@ -1,0 +1,331 @@
+                                        HTML - HYPER TEXT MARKUP LANGUAGE
+HTML stands for HyperText Markup Language.HyperText Markup Language (HTML) is the set of markup symbols or 
+codes inserted into a file intended for display on the internet.It is a standard markup language for web 
+page creation.
+Let's understand what do HyperText and Markup Language mean - 
+
+                                   HyperText- text within text
+When we click a link on webpage,it takes us on another page,this is hypertext.
+HyperText is a way of organizing text that allows the reader to easily navigate and access related 
+information. It takes the reader to a different part of the same web page, or to a different web page 
+altogether.
+
+                                   Markup language
+A markup language is a computer language that is used to add structure and formatting to a text document. 
+Markup languages use a system of tags to define the structure and content of a document. These tags are 
+interpreted by a program or application to display the document in a specific way.
+
+                                   BRIEF HISTORY OF HTML:-
+Tim Berners-Lee, a physicist at the CERN research institute in Switzerland invented HTML in 1991. This 
+first version consisted of 18 HTML tages. Now, there are currently about 140 HTML tags, although not all of 
+them are supported by modern browsers. 
+
+                                   The Timline of HTML -
+1991- Tim Berners-Lee invents HTML 1.0
+1993- HTML 1.0 is released. Not many developers are creating websites at this time.
+1995- HTML 2.0 is published. This contains the features of HTML 1.0 plus new features. This remained the 
+standard markup language for designing and creating websites until 1997.
+1997- HTML 3.0 was invented. Here, Dave Raggett introduced a fresh draft on HTML, which improved new 
+features of HTML and gave more powerful characteristics for webmasters in designing websites. Unfortunately, 
+the powerful features slowed down the browser in applying further improvements.
+1999- The widely-used HTML 4.0 comes out. It is very successful.
+2014- HTML 5.0 is released and used worldwide. It is said to be theH extended version of HTML 4.01 which was 
+published in 2012.
+
+                                   HTML5 :-
+HTML5 is the fifth and current version of HTML. It has improved the markup available for documents and 
+has introduced application programming interfaces (API) and Document Object Model (DOM)
+
+Features of HTML5 :
+
+New Semantic Elements
+Inline SVG
+Form Features
+WebM Video Format
+Placeholder Attribute
+Server-sent Events
+Local Web Storage
+
+HTML elements :-
+HTML elements consist of several parts, including the opening and closing tags, the content, and the 
+attributes.
+
+        HTML TAG :
+HTML tags are letters or keywords enclosed in <> brackets that define how a browser will format and display 
+content.
+For example, <p> is an opening tag for a paragraph, and </p> is the corresponding closing tag; thus, 
+a paragraph of text would be written as - 
+<p>This is a paragraph.</p>.
+
+HTML tags are the building blocks of all websites. They provide structure and meaning to web pages by 
+defining different elements of the page, such as headings, paragraphs, lists, and links. HTML tags can 
+also be used to add images and other media to webpages, as well as to create interactive elements like 
+forms and buttons.
+
+                                   Types of HTML5 tags :
+HTML Tags can be divided into various types based on different aspects.
+1) Based on formation,HTML tags can be categorized into two types - 
+Paired and Unpaired Tags : 
+
+        Paired Tags :
+An HTML tag is known as a paired tag when the tag consists of an opening tag and a closing tag as its 
+companion tag. An HTML Paired tag starts with an opening tag: the tag name enclosed inside the angle 
+brackets; for example, a paragraph opening tag is written as ‘<p>’. The content follows the opening tag, 
+which ends with an ending tag: the tag name starting with a forward slash; for example, an ending paragraph 
+tag is written as ‘</p>’. The first tag can be referred to as the ‘Opening Tag’, and the second tag can be
+ called Closing Tag.
+
+Example :
+
+<p> This text is a paragraph . </p>
+Output:
+ This text is a paragraph .
+
+        Unpaired Tags :
+An HTML tag is called an unpaired tag when the tag only has an opening tag and does not have a closing tag 
+or a companion tag. The Unpaired HTML tag does not require a closing tag; an opening tag is sufficient in 
+this type. Unpaired tags are sometimes also named as Standalone Tags or Singular Tags since they do not 
+require a companion tag.
+
+Example:
+
+<p> This is a paragraph </p>
+<hr>
+<i> <b> This is a bold and italicized text </b> </i>
+
+2)  Based on formation,HTML tags can be categorized into two types - 
+Semantic Tag and Non-semantic Tag :
+
+Semantic Tags
+The tags which accurately describe their purpose and describe the type of their content are called semantic 
+tags. For example,
+
+<h1>Header</h1>
+From the above code, we can accurately tell that the content inside the <h1> tag is a heading.
+
+Some examples of semantic tags are 一 <h1>-<h6>, <form>, <table>, <main>, etc
+
+Non-Semantic Tags
+HTML non-semantic tags do not have a specific meaning or purpose. They are used to create general-purpose 
+containers for content without providing any additional meaning or context. For example,
+
+<span>Some Text</span>
+From the above code, we cannot extract the meaning of the text. This code could come from any section of 
+the document thus it adds no semantic value to the document.
+
+Some examples of non-semantic tags are 一 <div>, <span>, etc
+
+What is the difference between HTML tags and elements?
+An HTML tag is an indication to a web browser of how a web page should displayed,but an HTML element is an 
+individual component of HTML. HTML elements are created using HTML tags.
+In HTML, a tag is the markup notation that defines the beginning and end of an element, while an element 
+refers to the entire set of opening and closing tags along with the content they enclose.
+
+For example, in the HTML code <p>this is a paragraph </p>, the <p> and </p> are the opening and closing 
+tags, respectively, and together they define the <p> element that contains the text "This is a paragraph".
+
+HTML Attributes :
+HTML elements can have attributes, which provide additional information about the element. They are 
+specified in the opening tag of the element and take the form of name-value pairs. Let's see an example:
+
+<a href="http://example.com"> Example </a>
+
+The href is an attribute. It provides the link information about the <a> tag. In the above example,
+href                        - the name of attribute
+https://www.programiz.com   - the value of attribute
+
+Note: HTML attributes are mostly optional.
+Case Insensitivity in HTML Tags and Attributes
+In HTML, tag and attribute names are not case-sensitive (but most attribute values are case-sensitive). 
+It means the tag <P>, and the tag <p> defines the same thing in HTML which is a paragraph.
+
+        HTML Boilerplate:
+Every website is different, but there are many things that are essentially the same from one web site to 
+the next. Rather than write the same code over and over, it’s a good idea to create our own “boilerplate”. 
+A boilerplate is a template that us break out each time you start a project, saving us from having to 
+start from scratch.
+One simple Boilerplate of HTML - 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Boilerplate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+        HTML5 Doctype :
+HTML5 template needs to start with a document type declaration, or doctype. A doctype is simply a way to 
+tell the browser — or any other parser — what type of document it’s looking at. In the case of HTML files, 
+it means the specific version and flavor of HTML. The doctype should always be the first item at the top of
+any HTML file. 
+
+      <!doctype html>
+
+                                   The <html> Element :
+The <html> element is the top-level element in an HTML file — meaning that it contains everything in the 
+document other than the doctype. The <html> element is divided into two parts — the <head> and <body> 
+sections. Everything else in the web page file will be placed either in the <head> element or inside the 
+<body> element.
+
+The code below shows the <html> element, which follows the doctype declaration and includes the <head> and 
+<body> elements:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body></body>
+</html>
+
+
+                                   <head> Tags in HTML :
+The <head> section contains important information about the document that isn’t displayed to the end user 
+— such as the character encoding and links to CSS files and possibly JavaScript files too. This information 
+is used by machines such as browsers, search engines and screen readers:
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Boilerplate</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>  
+</head>
+All of the elements contained between those <head> … </head> tags above is important but not seen by end 
+users — except perhaps the <title> text, which will appear in online searches and in browser tabs.
+
+                 <body> tags in HTML :
+The <body> section contains everything that’s displayed in the browser — such as text, images, and so on. 
+If you want to present something to the end user, make sure it’s placed between the opening and closing 
+<body> … </body> tags:
+
+<body>
+  <h1>This is My Dog</h1>
+  <p>
+    <img src="dog.jpg" alt="A golden retriever, lying in the grass">
+  </p>
+  <p>Here's my gorgeous boy, lying in the grass after our walk today.</p>                                                                                                           
+</body>                               
+
+                                   the lang Attribute :
+The <html> element ideally includes the lang attribute, as shown in the code above (<html lang="en">). 
+Its main purpose is to tell assistive technologies such as screen readers how to pronounce the words when 
+read aloud. (This attribute isn’t required for a page to validate, but you’ll get a warning from most 
+validators if you don’t include it.)
+
+                                   <meta> tags in HTML :
+meta tags are HTML tags used to provide additional information about a page to search engines and other 
+clients. Clients process the meta tags and ignore those they don't support. meta tags are added to the 
+<head> section of your HTML page and generally look like this:
+
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Author: A.N. Author, Illustrator: P. Picture, Category: Books, Price:  £9.24, Length: 784 pages">
+    <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34=">
+    <title>Example Books - high-quality used books for children</title>
+    <meta name="robots" content="noindex,nofollow">
+  </head>
+</html>
+
+                 HTML Document Character Encoding :
+the first line inside the <head> section of an HTML document is the one that defines the character encoding 
+for the document. The letters and symbols that we read on a web page are defined for computers as a series 
+of numbers, and some characters (such as letters) are encoded in multiple ways. So it’s useful to tell your 
+computer which encoding your web page should refer to.
+
+Indicating the character encoding is an optional feature and won’t cause any warnings in validators, but 
+it’s recommended for most HTML pages:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> <!-- character encoding -->
+    ⋮ 
+  </head>
+  <body></body>
+</html>
+
+Note: to ensure that certain older browsers read the character encoding correctly, the entire character 
+encoding declaration must be included somewhere within the first 512 characters of your document. It should 
+also appear before any content-based elements (like the <title> element that appears later in our example).
+
+
+What Does X-UA-Compatible Mean?
+You will sometimes see this line in the head of an HTML document:
+
+<head>
+  ⋮ 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+This meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as.
+Now that Internet Explorer is largely just a bad memory, you can safely leave this line out of your code. 
+(We’ve left it out of our HTML5 boilerplate.) If you know for sure that your web page might be viewed in 
+old versions of IE, it might be worth including it. You can read more about this meta tag on the Microsoft 
+site.
+
+                                   The Viewport Meta Element
+The viewport meta element is a feature you’ll see in just about every HTML5 template. It’s important for 
+responsive web design and mobile-first design:
+
+<head>
+  ⋮
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+This <meta> element includes two attributes that work together as a name/value set. In this case, the name 
+is set to viewport and the value is width=device-width, initial-scale=1. This is used by mobile devices only.
+You’ll notice the value has two parts to it, described here:
+
+width=device-width: the pixel width of the viewport that you want the website to be rendered at.
+initial-scale: this should be a positive number between 0.0 and 10.0. A value of “1” indicates that there’s 
+a 1:1 ratio between the device width and the viewport size.
+
+                          HTML Inline and Block Elements
+
+HTML elements can be broadly categorized into one of two categories:
+
+Inline Elements: <span>, <a>, <strong>, <img> etc.
+Block Elements: <p>, <div>, <h1>, <figure> etc.
+
+                   HTML Inline Elements : 
+Inline elements are displayed on the same line. They do not start on a new line and take up only as much width 
+as their contents require. An example of an inline element is the <span> tag.
+
+Exm -
+<p>This is how <span style="border: 1px solid black">span</span> works. </p>
+
+Some examples of inline elements are:
+
+HTML <a> tag
+HTML <input> tag
+HTML <span> tag
+Most HTML formatting tags are also inline. For example:
+
+HTML <b> tag
+HTML <em> tag
+HTML <strong> tag, etc
+
+                 HTML Block Elements
+Block elements take up the whole horizontal space available in its container. They start on a new line and take 
+up as much height as their contents require.
+An example of a block element is the HTML Paragraph Tag.
+
+<p style="border: 1px solid black">This is how block elements works. </p>
+
+If we have multiple block elements, they will each take a separate line. For example,
+
+<p style="border: 1px solid black">Paragraphs are</p> <p style="border: 1px solid black">Block Elements.</p>
+Some frequently used Block elements are:
+
+HTML <div> tag
+HTML Headings <h1> - <h6>
+HTML <p> tag, etc
+
+

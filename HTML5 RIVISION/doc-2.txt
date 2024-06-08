@@ -1,0 +1,450 @@
+                                  Basic tags of HTML
+
+HTML Paragraphs :
+The HTML <p> tag is used to create paragraphs. 
+
+For example -
+<p>HTML is fun to learn.</p>
+
+HTML paragraphs always start on a new line. To demonstrate this, 
+let's create a webpage with two paragraphs - 
+
+<p>Paragraph 1: Short Paragraph</p>
+<p>Paragraph 2: Long Paragraph, this is a long paragraph with more text to 
+fill an entire line in the website.</p>
+
+The above HTML code contains two paragraphs. And each paragraph starts on a new line even though there is 
+sufficient space after the first paragraph.
+
+Note: By default, browsers automatically add whitespace (margin) above and below paragraphs. 
+It is possible to change whitespace and other design aspects using CSS.
+
+HTML Headings
+The HTML heading tags (<h1> to <h6>) are used to add headings to a webpage. 
+
+For example :
+<h1>This is heading 1.</h1>
+<h2>This is heading 2.</h2>
+<h3>This is heading 3.</h3>
+<h4>This is heading 4.</h4>
+<h5>This is heading 5.</h5>
+<h6>This is heading 6.</h6>
+
+In the example, 
+we have used tags <h1> to <h6> to create headings of varying sizes and importance.
+
+The <h1> tag denotes the most important heading on a webpage. Similarly, <h6> denotes the least important 
+heading.
+The difference in sizes of heading tags comes from the browser's default styling. And, you can always change
+the styling of heading tags, including font size, using CSS.
+
+Note: Do not use heading tags to create large texts. It's because search engines like Google use heading 
+tags to understand what a page is about.
+
+HTML Comments
+HTML comments are used to insert notes to a web page. For example,
+
+<!-- heading 2 -->
+<h2>Comments in HTML</h2>
+Here, <!-- heading 2 --> is a comment. In HTML, comments start with <!-- and ends with -->
+
+HTML comments are not displayed by browsers. They are used to add notes for documentation purposes within code. 
+For example -
+
+<!-- an HTML div  -->
+<div>
+    <p>HTML is fun to learn.</p>
+</div>
+
+Why use HTML Comments?
+Comments are mainly used to make our code more readable. They are completely hidden from the webpage and only 
+show up in the code.
+Commenting on your code is a good practice as it helps us to express what the code is doing. It can act as an 
+anchor for you if you want to change your code in the future.
+
+In a collaborative environment, code comments are helpful for other developers as well.
+
+Note: Even though browsers don't display comments, it's still possible to view comments using the browser's 
+View Source feature. That's why we must not add sensitive information inside comments.
+
+Single-Line and Multi-line Comments
+In HTML, we use the same syntax to create single-line and multi-line comments.
+
+Single Line Comment
+
+<!-- Write a heading -->
+<h1>Important Heading</h1>
+Multi-line Comments
+
+ <!-- Multiple Line comments 
+ can include line breaks 
+ and also extra     spaces -->
+  
+ <p>this will display in the webpage</p>
+
+ HTML Tags Inside Comments
+If we put HTML elements inside comments, they will be ignored. For example,
+
+  <p>this will be displayed</p>
+
+  <!-- <p>this will not be displayed</p> -->
+
+  <p>this will also be displayed</p>
+
+
+HTML Table 
+The HTML table tag (<table>) is used to represent data in a structured way by creating a table. 
+For example :
+
+<table border="1" >
+  <tr>
+    <th>Name</th>
+    <th>Age</th>  
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Harry Depp</td>
+    <td>28</td>
+    <td>Britain</td>
+  </tr>
+  <tr>
+    <td>John Smith</td>
+    <td>35</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Ram Krishna</td>
+    <td>19</td>
+    <td>Nepal</td>
+  </tr>
+</table>
+
+In the above example, you can see we have used multiple tags to create a table in HTML.
+
+<table>
+<tr>
+<td>
+<th>
+
+Table tag <table> in HTML
+The <table> tag is used to define a table. For example,
+
+<table>
+  ….
+<table>
+
+Table Row <tr> in HTML
+The <tr> tag is used to define a row in a table. For example,
+
+<table>
+<tr>
+  ...
+</tr>
+</table>
+
+Table Row <tr> in HTML
+The <tr> tag is used to define a row in a table. For example,
+
+<table>
+<tr>
+  ...
+</tr>
+</table>
+
+The table row can include either table heading, <th> or table data, <td>.
+
+<tr>
+  <th>Name</th>
+  <th>Country</th>
+</tr>
+<tr>
+  <td>Prasanna</td>
+  <td>Nepal</td>
+</tr>
+<tr>
+  <td>Simon</td>
+  <td>USA</td>
+</tr>
+In a table, there can be any number of rows.
+
+Table Heading, <th> in HTML
+The <th> tag is used to define a table header. It is generally the top row of the table. 
+For example :
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Count</th>
+  </tr>
+  <tr>
+    <td>Mango</td>
+    <td>125</td>
+  </tr>
+  <tr>
+    <td>Orange</td>
+    <td>75</td>
+  </tr>
+</table>
+
+In the above example, Item and Count are table headers and they are used to represent the category of data in 
+a particular row.
+
+Here, the styling of the table headers is bold and center-aligned. This is because the <th> tag has some 
+default styling.
+
+Table Cell <td> in HTML
+The <td> tag is used to define table cells (data). The table cells store data to be displayed in the table. 
+For example :
+
+<tr>
+  <td>Apple</td>
+  <td>Mango</td>
+  <td>Orange</td>
+</tr>
+In the above example, <td>Apple</td>, <td>Mango</td> and <td>Orange</td> are table cells.
+
+Table cells are generally inside the table row or table headers.
+
+Table Border
+Remember we have used the border attribute in our first example.
+
+<table border="1">
+  ...
+</table>
+In HTML, the border attribute is used to add a border to a table and all the cells.
+
+Note: We can have borders of various styles in tables, however for more specific borders, we need to use CSS.
+
+To prevent double borders like the one in the example above, we can set the border-collapse property of the 
+table. 
+For example :
+
+<table border="1" style="border-collapse: collapse;">
+  ...
+</table>
+
+
+The HTML table can be divided into three parts: a header, a body, and a footer.
+
+1. Table Header
+
+We use the <thead> tag to add a table head. The <thead> tag must come before any other tags inside a table. 
+For example -
+
+<table>
+  <thead>
+    <tr>
+        <th>Head1</th>
+        <th>Head2</th>
+    </tr>
+  </thead>
+
+  ...
+  ...
+</table>
+The content of <thead> is placed on the top part of the table and we usually place the rows with table 
+headers inside the <thead> tag.
+
+2. Table Body
+
+We use the <tbody> tag to add a table body. The <tbody> tag must come after <thead> and before any other tags 
+inside a table. For example,
+
+<table>
+  <thead>
+    ...
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+  </tbody>
+
+  ...
+  ...
+</table>
+The content of <tbody> is placed on the center part of the table and we usually place the rows with the 
+content we want to represent in the <tbody>.
+
+3. Table Footer
+
+We use the <tfoot> tag to add a table footer. The <tfoot> tag must come after <tbody> and before any other 
+tags inside a table. For example,
+
+<table>
+  <thead>
+    ...
+  </thead>
+  <tbody>
+    ,,,,
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>foot 1</td>
+      <td>foot 2</td>
+    </tr>
+  </tfoot>
+</table>
+The content of <tbody> is placed on the bottom part of the table and we usually place the rows with the footer in the <tfoot>.
+
+All these tags must be placed inside a <table> tag and must contain at least one <tr>. 
+For example :
+                                HTML Table Head, Body, and Footer
+
+<table>
+  <thead>
+    <tr>
+      <th>S.N</th>
+      <th>Item</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Apple</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mango</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Orange</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>5</td>
+    </tr>
+  </tfoot>
+</table>
+
+Colspan and Rowspan
+
+Colspan
+The colspan attribute merges cells across multiple columns. 
+For example :
+
+<table>
+  <tr>
+    <th>S.N</th>
+    <th>Item</th>
+    <th>Quantity</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Apple</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Mango</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Orange</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td colspan="2">Total</td>
+    <td>5</td>
+  </tr>
+</table>
+In the above example, you can see that the last row only has 2 cells with one cell occupying 2 columns.
+
+The value of the colspan attribute determines how many columns the cell occupies.
+
+Rowspan
+The rowspan attribute merges cells across multiple rows. 
+For example -
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Subject</th>
+    <th>Marks</th>
+  </tr>
+  <tr>
+    <td rowspan="3">Mark Smith</td>
+    <td>English</td>
+    <td>67</td>
+  </tr>
+  <tr>
+    <td>Maths</td>
+    <td>82</td>
+  </tr>
+  <tr>
+    <td>Science</td>
+    <td>91</td>
+  </tr>
+</table>
+In the above example, you can see that the first column only has 2 cells with one cell occupying 2 rows.
+The value of the rowspan attribute determines how many rows the cell occupies.
+
+FAQ about HTML Table :
+
+Can we use both colspan and rowspan together?
+Yes, we can use both colspan and rowspan to create cells that occupy multiple rows and columns.
+
+How to create vertical headers on table ?
+
+Before,we have seen table headers, <th>, used in the top row multiple times. But we can also add the <th> tags across columns to create a vertical header. For example,
+
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Sam</td>
+    <td>Steve</td>
+    <td>Peggy</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>31</td>
+    <td>42</td>
+    <td>29</td>
+  </tr>
+  <tr>
+    <th>Gender</th>
+    <td>M</td>
+    <td>M</td>
+    <td>F</td>
+  </tr>
+</table>
+
+How to add caption in HTML table ?
+
+Caption in HTML TABLE
+The <caption> element acts as the title of the table. It is used to give a short description of the table. 
+It shows up on top of the table.
+
+The <caption> tag must be the first child of the <table> element.
+
+<table>
+  <caption>Employee Details</caption>
+  <tr>
+    <th>Name</th>
+    <td>Sam</td>
+    <td>Steve</td>
+    <td>Peggy</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>31</td>
+    <td>42</td>
+    <td>29</td>
+  </tr>
+  <tr>
+    <th>Gender</th>
+    <td>M</td>
+    <td>M</td>
+    <td>F</td>
+  </tr>
+</table>

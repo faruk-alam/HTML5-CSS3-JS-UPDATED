@@ -58,7 +58,7 @@ HTML draggable Attribute -
 The draggable attribute on an element specifies that the element can be dragged.
 All visual elements can be made draggable with this attribute.
 
-Synta :
+Syntax :
 <tag draggable="true | false | auto" />
 
 Values :
