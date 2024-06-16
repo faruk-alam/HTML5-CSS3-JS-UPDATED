@@ -1,3 +1,5 @@
+Features : Image,bold,italic,superscript,subscript,quotation,iframe
+
                                         HTML Image
 
 The HTML <img> tag embeds an image within the HTML web page. 
@@ -13,7 +15,7 @@ The alt attribute
 
 HTML Image src Attribute
 The src attribute is a required attribute for the <img> tag. It specifies the path (URL) to the image. 
-ùIt tells the browser where to look for the image. 
+aIt tells the browser where to look for the image. 
 For example :
 
 <img src="tictactoe.png" >
@@ -74,3 +76,208 @@ PNG	            Portable Network Graphics	                        .png
 SVG	            Scalable Vector Graphics	                        .svg
 JPEG	        Joint Photographic Expert Group image	            .jpg, .jpeg
 WEBP	        Web Picture	                                        .webp
+
+HTML Bold
+We use the HTML <b> tag or the HTML <strong> tag to make text bold. 
+
+For example:
+
+<b>This text is bold.</b>
+<br>
+<strong>This text is
+
+HTML <b> vs <strong> Tag :
+Both <b> and <strong> tags make the text inside them bold and there is no difference in how browsers render 
+these tags.
+However, the <strong> tag is a semantic tag that indicates the text content is of strong importance, 
+seriousness, or urgency (for example, Warning! Falling rocks) whereas the <b> tag has no semantic meaning 
+and only makes the text bold.
+Hence, it is generally preferred to use the HTML <strong> tag.
+Note: You can also use the CSS property font-weight to make the text bold.
+
+HTML Italic
+We use the HTML <i> tag or the HTML <em> tag to make the text italic.
+
+HTML <i> Tag
+The HTML <i> tag is a physical tag used to make the text italic. It is used to indicate foreign text, 
+scientific nomenclature, thoughts, etc.
+
+<p> This text is <i>italic</i>.</p>
+
+HTML <em> Tag
+The HTML <em> tag is a semantic tag that is used to signify that the text inside the tag is being emphasized.
+It is a semantic tag as opposed to <i> which doesn't hold any semantic meaning.
+
+<p> This text is <em>emphasized</em>.</p>
+
+Usage of HTML <i> tag
+The <i> tag is a presentational tag, it is mostly used to:
+
+
+Web Tutorials
+HTML Formatting
+HTML Bold
+Semantic HTML
+HTML Accessibility
+HTML <main> Tag
+HTML Superscript and Subscript
+
+
+
+
+HTML Italic
+We use the HTML <i> tag or the HTML <em> tag to make the text italic.
+
+HTML <i> Tag
+The HTML <i> tag is a physical tag used to make the text italic. It is used to indicate foreign text, scientific nomenclature, thoughts, etc.
+
+<p> This text is <i>italic</i>.</p>
+Browser Output
+
+Italic text with 
+HTML <em> Tag
+The HTML <em> tag is a semantic tag that is used to signify that the text inside the tag is being emphasized. It is a semantic tag as opposed to <i> which doesn't hold any semantic meaning.
+
+<p> This text is <em>emphasized</em>.</p>
+Browser Output
+
+Italic text with 
+Usage of HTML <i> tag
+The <i> tag is a presentational tag, it is mostly used to:
+
+1. represent text in another language. 
+For example :
+<p> The Foreigner said <i>Bonjour cher ami </i>, which means 'Hello dear friend' in French. </p>
+
+2. represent words or phrases used as terms. 
+For example :
+<p> The words <i>the</i>, <i>a</i> and <i>an</i> are articles. </p>
+<p> This is an example of an <i>idiom.</i> </p>
+
+3. represent scientific names of animals, plants, etc. 
+For example :
+<p> The scientific name for cow is <i>Bos indicus.</i></p>
+
+
+HTML <em> Tag Vs HTML <i> Tag
+There is no difference in how <i> and <em> tag renders on the browser. 
+For example :
+
+<p>Do not enter the tiger enclosure <i>under any circumstances</i>.</p>
+<p>My teachers <em>heavily</em> emphasize studying.</p>
+
+Both <em> and <i> make the font italic. However, <em> tag is a semantic tag that indicates that the text 
+inside the tag is spoken with a stressed emphasis when compared to surrounding texts. Screen Readers will 
+also emphasize text inside the <em> tag. Whereas the <i> tag only make the text italic.
+
+Note: For purely styling purposes, it is recommended to use the CSS property font-style.
+
+HTML Superscript and Subscript
+Superscript
+The HTML <sup> tag is used to create superscript text. The text inside the <sup> tag is rendered half a 
+character above the normal line and has a smaller font size. 
+
+For example :
+<p> This is a <sup>Superscript</sup> text.</p>
+
+Usage of Superscript
+Superscript text is generally used for exponents, measurement units, and ordinal numbers. 
+For example :
+
+1. Superscript in exponents
+<p> a<sup>2</sup> + b<sup>2</sup> = c<sup>2<sup></p>
+
+2. Superscript in measurement units
+<p>The area of this park is 200m<sup>2</sup>.</p>
+
+3. Superscript in ordinal numbers
+<p>Ram scored 1<sup>st</sup> position in the 100m race.</p>
+
+Subscript
+The HTML <sub> tag is used to create subscript text. The text inside the <sub> tag is rendered half a 
+character below the normal line and has a smaller font size. 
+For example,
+<p> This is a <sub>Subscript</sub> text.</p>
+
+Usage of Subscript
+Superscript text is generally used for mathematics and chemical formulas. 
+For example :
+
+1. Usage in Mathematical Formula
+<p> <var>x<sub>1</sub></var> … <var>x<sub>n</sub></var></p>
+
+2. Usage in Chemical Formula
+<p> H<sub>2</sub>SO<sub>4</sub> is chemical formula for sulphuric acid.</p>
+
+HTML Quotation
+The HTML quotation elements are used to insert the quoted text in the web page that is different from the 
+standard text on the website.
+
+<q>
+<blockquote>
+
+<q> tag
+The <q> tag is used for short quotations that do not require paragraph breaks. 
+For example :
+
+<p>This is a paragraph with <q>quotation text</q></p>
+
+<blockquote> tag :
+The <blockquote> tag defines the section of text that is quoted from another source. Another source is any 
+place other than the current website. It is used to represent block of quoted text. 
+
+For example :
+<blockquote cite="https://www.programiz.com/about-us"> Our mission is to help users learn programming more 
+easily.</blockquote>
+<p>-Programiz.com</p>
+
+In the above example, the <blockquote> tag displays the quoted text as a block with an indentation at the 
+beginning that indicates that it is a quotation.
+
+The cite attribute is an optional attribute used to add a URL that designates a source document for the 
+information quoted. In this example, we can see that the above quote is quoted from the Programiz site.
+
+HTML Iframes
+The HTML <iframe> tag is used to embed a webpage within a webpage. It is also called an inline frame. 
+For example :
+<iframe src="https://programiz.pro" title="programiz pro website" height="500" width="500" ></iframe>
+
+Here,
+src: It is used to specify the URL of the website to be loaded.
+title: It is good practice to include a title attribute so that screen readers can read the title to users.
+
+Other Attributes for <iframe>
+There are some importat attributes for <iframe>. They are:
+
+height and width
+name
+srcdoc
+We will explore each of them in detail.
+
+height and width
+We can set the height and width of the <iframe> element with the height or width attribute. 
+For example :
+<iframe src="https://programiz.pro" height="200" width="300"></iframe>
+
+We can also use CSS to set the width and height of the <iframe> using the style attribute. 
+For example:
+<iframe src="https://programiz.pro" style="height:200px;width:300px"></iframe>
+It is important to add height and width to allocate space on the webpage for the iframe.It prevents content 
+from moving when the iframe loads.
+
+name
+The name attribute is used to specify the name for an iframe. It can be used as a target for other HTML 
+elements like the <a> tag. 
+
+For example,
+<iframe src="https://parewalabs.com" name="iframe_target" height="500" width="400"></iframe>
+
+<a href="https://www.programiz.pro" target="iframe_target">Switch to Programiz Pro</a>
+
+
+
+
+
+
+
+

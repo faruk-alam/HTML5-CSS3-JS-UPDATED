@@ -1,0 +1,188 @@
+Feature : Entities,Imojis,symbol,nbsp,svg
+HTML Entities
+The HTML entities are used to display reserved characters (characters that are used in HTML code), 
+special characters, or invisible characters. 
+For example :
+<p>This is a &lt;p&gt; tag.</p>
+Here, &lt; and &gt; are the HTML entities used to display < and > respectively.
+
+If we were to use the <p> tag instead of &lt;p&gt; the browser would read it as a tag. Hence to display <p> 
+we need to use &lt; and &gt; instead of < and > respectively.
+
+HTML Entities Syntax
+HTML entities are represented by either their name or their number.
+
+Entity names
+We use &entity_name; to add reserved characters using Entity names. 
+For example :
+&cent; would be displayed as ¢
+
+Entity number
+We use &#entity_number; to add reserved characters using Entity number. For example, &#162; would also be 
+displayed as ¢
+
+All entity names and numbers start with an & and end with an ;.
+
+Note: Not all entities have names, only characters that are commonly used have entity names.
+
+Special Characters :
+Special characters are characters that are not available on a general keyboard like ®, ©, ¢, etc.
+We use HTML entities to add special characters to HTML documents. 
+For example :
+
+<footer> &copy; 2022 Programiz. All rights reserved. </footer>
+
+Some important HTML entities  :
+
+Character(s)	                Literal(s)	                  Alphanumeric value(s)	      Unicode value(s)
+Cent (currency)	                    ¢	                            &cent;	                    &#162;
+Pound (currency)	                £	                            &pound;	                    &#163;
+Section	                            §                               &ect;	                    &#167;
+Copyright	                        ©	                            &copy;	                    &#169;
+Guillemets	                       « »	                        &laquo; &raquo;	              &#171; &#187;
+Registered trademark	            ®	                            &reg;	                    &#174;
+Degree(s)	                        °	                            &deg;	                    &#176;
+Plus/minus	                        ±	                            &plusmn;	                &#177;
+Pilcrow (paragraph)	                ¶	                            &para;	                    &#182;
+Middle dot	                        ·	                            &middot;	                &#183;
+Fractional half	                    ½	                            &frac12;	                &#188;
+En dash	                            –	                            &ndash;	                    &#8211;
+Em (long) dash	                    —	                            &mdash;	                    &#8212;
+Single quotes	                   ' '	                         &lsquo; &rsquo;	         &#8216; &#8217;
+Single low quote	                ‚	                            &sbquo;	                    &#8218;
+Double quotes 	                   " "	                         &ldquo; &rdquo;	         &#8220; &#8221;
+Double low quote	                „	                            &bdquo;	                    &#8222;
+Single & double daggers	           † ‡	                         &dagger; &Dagger;	         &#8224; &#8225;
+Bullet	                            •	                            &bull;	                    &#8226;
+Ellipsis	                        …	                            &hellip;	                &#8230;
+Prime & double prime 	          ′ ″	                          &prime; &Prime;	         &#8242; &#8243;
+Euro sign	                        €	                            &euro;	                    &#8364;
+Trademark	                        ™	                            &trade;	                    &#8482;
+Almost equal to	                    ≈	                            &asymp;	                    &#8776;
+Not equal to	                    ≠	                            &ne;	                    &#8800;
+Less/greater than or equal to	   ≤ ≥	                          &le; &ge;	                 &#8804; &#8805;
+Less/greater than	               < >	                          &lt; &gt;	                 &#062; &#060;
+
+HTML Emojis
+Emoji are small graphical images that are used to represent emotions, objects, and ideas. They can be 
+inserted into HTML documents by using character code. 
+For example :
+<p>&#128512;</p>
+
+Here, &#128512; is the character code for the above emoji.
+Ways To Insert Emojis In Html
+There are three ways to insert emojis into an HTML document. They are:
+
+Hexadecimal code
+Decimal code
+Copy and paste from external sources
+
+Hexadecimal code
+We can add emojis to an HTML document by using their hexadecimal code. These code starts with &#x and ends 
+with ; to specify browser that these are hexadecimal codes. 
+For example :
+
+<p>HTML is <span>&#x1F499;</span> </p>
+Note: Hexadecimal code provides portability and consistency to the document in the long run.
+
+Decimal Code
+We can add Emojis to an HTML document by using their decimal code within the required tag. These codes start 
+with &# and end with an ; to inform the browser that the character represented by the decimal code has been 
+displayed. 
+For example :
+
+<p>&#128512;</p>
+
+Copy and paste from external sources
+We can add emojis in an HTML document by copying it from some external sources and pasting it into code. 
+For example :
+
+<p>HTML is <span> 💜 </span> </p>
+
+Some Popular Emojis
+Emoji	Name	Code
+😂	Face with Tears of Joy	&#128514;
+❤	Black Heart	&#10084;
+😍	Smiling Face with Heart-Shaped Eyes	&#128525;
+🙏	Person with Hands Folded	&#128591;
+🤣	Rolling On The Floor Laughing	&#129315;
+💕	Two Hearts	&#128149;
+😭	Loudly Crying Face	&#128557;
+🔥	Fire	&#128293;
+😘	Face Throwing a Kiss	&#128536;
+👍	Thumbs Up	&#128077;
+
+
+HTML NBSP
+HTML &nbsp; is an HTML entity for non-breaking space. It prevents two words from being rendered at 
+different lines. 
+For example :
+
+<p>
+    The World population as of 2022 has reached 7.837&nbsp;billion.
+</p>
+Here, 7.837 and billion will render on the same line on all screen sizes.
+
+Example of &NBSP;
+We use &nbsp; when we need two words together without breaking the line.
+For example :
+
+<p style="font-size: 30px">
+     The World population as of 2022 has reached 7.837 billion.
+</p>
+Here, you can see, even on the same screen size, 7.837 and billion now stick together.
+
+&nbsp for extra space
+In HTML, multiple consecutive space characters are not treated as multiple spaces. Instead, they are 
+treated as a single space. . 
+For example
+
+<p >This is a long                        paragraph.<p>
+
+So, to add more than one space, we can use the &nbsp; entity. 
+For example :
+<p >This is a long &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paragraph.</p>
+
+
+SVG (Scalable Vector Graphics) is used to create 2D diagrams such as shapes, logos, charts, etc.
+
+The HTML <svg> tag is used to embed SVG graphics in a web page. For example,
+
+<svg width="100" height="100" style="border:1px solid black;">
+    <circle cx="50" cy="50" r="30" fill="blue" />
+</svg>
+Browser Output
+
+In the above example, the code creates an SVG element with a width of 100 pixels and a height of 100 pixels.
+The SVG element has a solid black border.
+
+Inside the <svg> element we have created a circle using <circle> element. The cx and cy attributes define 
+the x and y coordinates of the center of the circle, while the r attribute defines the radius. The fill 
+attribute determines the color of the circle, which is set to blue in this example.
+
+Together, these elements create a blue circle with a black border that is centered within the <svg> 
+container.
+
+Attributes of SVG
+There are various attributes of SVG. They are as follows:
+
+preserveAspectRatio
+viewport and viewBox
+
+preserveAspectRatio
+The preserveAspectRatio attribute is used in SVG elements to specify how an element should be scaled and 
+aligned within the viewport. This attribute determines how the aspect ratio (ratio of width to height) of 
+the element is preserved when the element is resized or stretched. For example,
+
+<svg width="100" height="150" viewBox="0 0 100 100" preserveAspectRatio="none" style="border: 1px solid 
+black">
+    <circle cx="50" cy="50" r="50" />
+</svg>
+
+In this example, the preserveAspectRatio attribute is set to none, so the circle will be stretched to fit 
+the dimensions of the viewport. As a result, the circle appears distorted. Let's look at another example.
+
+<svg width="100" height="150" viewBox="0 0 100 100" preserveAspectRatio="meet" style="border: 1px solid 
+black">
+  <circle cx="50" cy="50" r="50" />
+</svg>
