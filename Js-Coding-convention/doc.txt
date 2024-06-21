@@ -1,0 +1,5 @@
+" Clean code reads like well-written prose.Clean code never obscures the designe's intent but rather is full
+of crisp abstraction and straightforward lines of control. " - Robert C. Martin 
+                                                    
+                                        Coding Convention
+
