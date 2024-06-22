@@ -6,5 +6,14 @@ of crisp abstraction and straightforward lines of control. " - Robert C. Martin
 Coding Convention is important part of any programming language.It is style guidelines for programming.
 
 Typecally cover - 
-Rules and Naming declaration variable and function. 
+Rules and Naming declaration variable and function.
+Rules for use of whitespace,indention and comment as well as best coding practice.
+
+Coding Convention secure quality,improve readability, make code mentainance easily. 
+
+Magic Number - is a number is assigned but has no clear meaning. ln this case, this number
+should be stored to a meaningfull variable. 
+
+
+
 
