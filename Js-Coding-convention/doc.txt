@@ -6,4 +6,5 @@ of crisp abstraction and straightforward lines of control. " - Robert C. Martin
 Coding Convention is important part of any programming language.It is style guidelines for programming.
 
 Typecally cover - 
-Rules and Naming d
+Rules and Naming declaration variable and function. 
+
