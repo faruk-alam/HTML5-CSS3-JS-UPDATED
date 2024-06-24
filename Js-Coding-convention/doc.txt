@@ -1,5 +1,5 @@
-" Clean code reads like well-written prose.Clean code never obscures the designe's intent but rather is full
-of crisp abstraction and straightforward lines of control. " - Robert C. Martin 
+"Clean code reads like well-written prose.Clean code never obscures the designe's intent but rather is full
+of crisp abstraction and straightforward lines of control." - Robert C. Martin 
                                                     
                                         Coding Convention
 
@@ -11,9 +11,16 @@ Rules for use of whitespace,indention and comment as well as best coding practic
 
 Coding Convention secure quality,improve readability, make code mentainance easily. 
 
-Magic Number - is a number is assigned but has no clear meaning. ln this case, this number
-should be stored to a meaningfull variable. 
+Some rules are below :
+
+Magic Number - is a number is assigned but has no clear meaning. ln this case, this number should be stored 
+to a meaningfull variable. 
+
+Deep Nesting - is a situation when a code contains nested loop or conditional statement.In this case,Each
+loop or conditional statement should be extracted into diferent function .
+
+Stop writting comment - comment can be good,our code should be self-documented.Code must speak for itself.
 
 
-
+Avoid large function 
 
