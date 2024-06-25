@@ -22,5 +22,27 @@ loop or conditional statement should be extracted into diferent function .
 Stop writting comment - comment can be good,our code should be self-documented.Code must speak for itself.
 
 
-Avoid large function 
+Avoid large function - If any function is large in size,It is better make different function to separate the 
+logic.
+
+Less code repetition - try less code repetition
+
+Naming variable and function - camelCase and use meaningfull Name
+camelCase - every fisrt letter of first word is lowercase and every first letter of next word is Uppercase.
+For example :
+const camelCase = "my variable";
+function homeTask (){
+     // code to be here
+}
+camelCase is naming standard to use for indentifying name,for example variable and function.
+Another important rule is to use meaningfull name when declare a variable and function name.
+
+For example :
+const listItem;
+let randomNumber;
+function getUserData;
+const retrieveValue = (data){
+    // code to be here
+}
+
 

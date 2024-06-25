@@ -1,0 +1,29 @@
+                                        Semantic Tags
+The tags which accurately describe their purpose and describe the type of their content are called semantic 
+tags. 
+For example :
+
+<h1>Header</h1>
+From the above code, we can accurately tell that the content inside the <h1> tag is a heading.
+
+Some examples of semantic tags are 一 <h1>-<h6>, <form>, <table>, <main>, etc
+
+Why use semantic HTML?
+We use semantic HTML because the semantic HTML makes:
+
+makes the code easier to read
+makes the site more accessible
+leads to better SEO
+
+we’ll touch on all of the new tags added as part of HTML5 to define the structure and content of a web page :
+
+header
+main
+nav
+article
+section
+aside
+address
+footer
+
+

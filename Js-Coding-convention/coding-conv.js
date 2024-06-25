@@ -31,4 +31,75 @@ const retrieveValue = (element) =>{
 }
 console.log(retrieveValue(deepNesting))
 
-// stop 
+// avoid large function 
+const addMultiplySubstrack = (a,b,c) => {
+    // addition
+    const addition = a+b+c;
+
+
+
+
+   // more more statement and logic
+
+
+
+
+
+
+
+
+    // Multiplacation
+    const multiplacation = a*b*c;
+
+
+
+
+  // more more statement and logic
+
+
+
+
+
+
+    // Subtraction 
+    const subtracktion = a-b-c
+    return `${addition} ${multiplacation} ${subtracktion}`
+
+}
+console.log(addMultiplySubstrack(9,5,2))
+
+//In above function,a lot of statement and logic,that why It is difficult to understand what we are 
+//returning.to avoid this difficulty ,we can make different function to separate logic.
+
+ const add = (a,b,c)=> a+b+c ;
+ const multiply = (a,b,c)=> a*b*c ;
+ const subtrack = (a,b,c)=> a-b-c ;
+
+
+// less code repetition 
+const getUserCredentials = (user) => {
+    const name = user.name
+    const surname = user.surname
+    const email = user.email
+    const password = user.password
+}
+// In above Expample,we have repeated code a lot.In this case ,we can use es6 destracturing method to extract
+// all value into one value.
+const getUserCredential = (user) => {
+    const {name, surname, email, password} = user;
+}
+
+// Naming variable and function - camelCase and use meaningfull Name.
+// camelCase 
+const camelCase = " ";
+const addNumber(w,x,y,z,){
+    let sum = w + x+ y +z ;
+    return sum;
+}
+
+//meaningful Name 
+getUserData;
+getuserInfo;
+
+// more meaningful
+getUserPost
