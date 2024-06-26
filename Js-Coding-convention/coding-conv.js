@@ -5,7 +5,7 @@
  // Here,this 86400 number has no significance.To make meaningfull this number,we can store this number to
  // meaningfull variable.
 
-//  let SECOND_IN_A_DAY = 86400 ;
+//  const SECOND_IN_A_DAY = 86400 ;
 //  for(let i = 0;i < SECOND_IN_A_DAY; i ++){
     //console.log(i)
 //  }
@@ -21,7 +21,8 @@
 //     })
 //  })
 
-//In above Code,there are one more code repeation ,to resolve this problem ,We need to use function
+//In above Code,there are one more code repeation ,to resolve this problem ,We need to use different function
+// to separate the logic .
 
 const retrieveValue = (element) =>{
     if(Array.isArray(element)){
@@ -103,3 +104,41 @@ getuserInfo;
 
 // more meaningful
 getUserPost
+
+// Favor descriptive over concise
+
+findUser;
+ 
+//More descriptive
+
+findUserByNameorEmail ;
+
+
+// Make booleans that read well in if - than statements.
+
+let car;
+Audi,sold,silver,airbag
+isAudi,isSold,isSilver,hasAirbag
+let isSold = false;
+
+// use noun for class names with pascal Case.
+
+let Task = {
+    // code to be here
+}
+
+let MakeList = {
+    // code to be here
+}
+
+// Capitalize constant value with SNAKE UPPER CASE (in case of multiple word)
+const SECOND_IN_A_DAY = 86400 ;
+const USER_AGE = 30;
+const USER = foundUser;
+const TODAY = new Date() ;
+
+// Avoid one letter variable or function name 
+
+let q = () => {};
+// In above code q is not descriptive.no body has idea about q.we can write for example - 
+let query = () => {}

@@ -1,3 +1,9 @@
+HTML Form
+An HTML Form is a section of the document that collects input from the user. The input from the user is 
+generally sent to a server (Web servers, Mail clients, etc).
+We use the HTML <form> element to create forms in HTML.
+
+
 HTML input Tag:
 The HTML input Tag is the place where a user can enter data. The input tag is used within < form> element 
 to declare input controls that allow users to input data. The default value accepted by the <input> Tag is 
