@@ -1,0 +1,159 @@
+Form Attributes
+The HTML <form> element contains several attributes for controlling data submission. They are as follows:
+
+action
+
+The action attributes define the action to be performed when the form is submitted. It is usually the url 
+for the server where the form data is to be sent.
+
+<form action="/login">
+    <label for="email">Email:</label>
+    <input type="email" name="email"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password"><br><br>
+    <input type="submit" value="Submit">
+</form>
+In the above example, when the form is submitted, the data from the form is sent to /login.
+
+method
+
+The method attribute defines the HTTP method to be used when the form is submitted. There are 3 possible 
+values for the method attribute:
+
+post - It is used to send data to a server to update a resource.
+<form method = "post">
+...
+</form>
+get: It is used to request data from a specified resource.
+
+<form method = "get">
+...
+</form>
+dialog: This method is used when the form is inside a <dialog> element. Using this method closes the dialog 
+and sends a form-submit event.
+To learn more about HTTP methods GET and POST, visit HTML Form Action: POST and GET.
+
+target
+
+It specifies where to display the response received after the form is submitted. Similar to the target 
+attribute in <a> tags, the target attribute has four possible values.
+
+_self (default): Load the response into the same browser tab.
+<form target="_self">
+    <label for="firstname">Enter your first name:</label>
+    <input type="text" name="firstname">
+</form>
+_blank: Load the response into a new browser tab.
+<form target="_blank">
+    <label for="firstname">Enter your first name:</label>
+    <input type="text" name="firstname">
+</form>
+_parent: Load into the parent frame of the current one. If no parent is available,it loads the response 
+into the same tab.
+<form target="_parent">
+    <label for="firstname">Enter your first name:</label>
+    <input type="text" name="firstname">
+</form>
+_top: Load the response into the top-level frame. If no parent is available, it loads the response into 
+the same tab.
+<form target="_top">
+    <label for="firstname">Enter your first name:</label>
+    <input type="text" name="firstname">
+</form>
+enctype
+
+It specifies how the form data should be encoded for the request. It is only applicable if we use the POST 
+method.
+<form method="post" enctype="application/x-www-form-urlencoded">
+</form>
+In the above example, data from the form will be encoded in the x-www-form-urlencoded format (which is the 
+default encoding format).
+
+name
+
+It specifies the name of the form. The name is used in Javascript to reference or access this form.
+
+<form name="login_form">
+    <label for="email">Email:</label>
+    <input type="email" name="email"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password"><br><br>
+    <input type="submit" value="Submit">
+</form>
+The above form can be accessed in javascript as:
+
+document.forms['login_form']
+Although it is possible to use name to access form elements in javascript, it is recommended to use id to 
+access the form elements.
+
+novalidate
+
+If the novalidate attribute is set, all validations in the form elements are skipped.
+
+<form novalidate>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit">
+</form>
+In the above example, the form will be submitted even if we enter some invalid value to the email field, 
+such as Hi.
+
+
+HTML Form Action: POST and GET
+The method attribute in the <form> element specifies how the data is sent to the server.
+
+HTTP methods declare what action is to be performed on the data that is submitted to the server. HTTP 
+Protocol provides several methods, and the HTML Form element is able to use two methods to send user data:
+
+GET method - used to request data from a specified resource
+POST method - used to send data to a server to update a resource
+The GET Method
+The HTML GET method is used to get a resource from the server. 
+For example :
+
+<form method="get" action="www.programiz.com/search">
+    <input type="search" name="location" placeholder="Search.." />
+    <input type="submit" value="Go" />
+</form>
+When we submit the above form by entering California in the input field, the request sent to the server will 
+be www.programiz.com/search/?location=California.
+
+The HTTP GET method adds a query string at the end of the URL to send data to the server. The query string 
+is in the form of key-value pair followed by ? symbol.
+
+
+From the URL, the server can parse the user-submitted value where:
+
+key - location
+value - California
+Note: If there is more than one query, the query string will be separated by a & symbol.
+
+The POST method
+The HTTP POST method is used to send data to the server for further processing. For example,
+
+<form method="post" action="www.programiz.com/user">
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" /><br />
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" /><br />
+    <input type="submit" />
+</form>
+When we submit the form, it will add the user input data to the body of the request sent to the server. 
+The request would look like
+
+POST /user HTTP/2.0
+Host: www.programiz.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 33
+
+firstname=Robin&lastname=Williams
+The data sent is not easily visible to the user. However, we can check the sent data using special tools 
+like the browsers' dev tools.
+
+
+GET	POST
+Data sent with the GET method is visible in the URL.	Data sent with the POST method is not visible.
+GET requests can be bookmarked.	POST requests can't be bookmarked.
+GET requests can be cached.	POST requests can't be cached.
+GET requests have a character limit of 2048 characters.	POST requests do not have a limit.
+Only ASCII characters are allowed in GET requests.	All data is allowed in POST request

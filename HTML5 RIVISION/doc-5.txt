@@ -186,3 +186,102 @@ the dimensions of the viewport. As a result, the circle appears distorted. Let's
 black">
   <circle cx="50" cy="50" r="50" />
 </svg>
+
+HTML Audio
+The HTML <audio> tag is used to embed a media player which supports audio playback into the HTML page. We use the HTML <audio> tag along with the <source> tag to add the audio player. For example,
+
+<audio controls>
+  <source src="audio.mp3" type="audio/mp3">
+</audio>
+
+In the above code:
+
+audio.mp3 - path to the audio we want to display
+audio/mp3 - the type of resource we want to display.
+The audio.mp3 file in the above example is located in the same directory as the HTML file.
+
+HTML <audio> with Multiple <source> Tag
+We can have more than one video <source> inside the <audio> tag. 
+For example :
+
+<audio controls>
+  <source src="audio.ogg" type="audio/ogg">
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+The <source> tag is used to provide several URLs of alternate formats for resources for multimedia tags 
+like <audio> tag. The browser chooses the first <source> tag whose resource is supported. In the above case, 
+if the browser does not support the ogg format, it will move to the next <source> tag and play the mp3 file.
+
+
+Attributes of HTML <audio> tag
+Let us look at the attributes supported by the HTML <audio> tag.
+
+controls
+autoplay
+loop
+muted
+src
+preload
+
+controls:
+The control attribute allows the user to control audio playback including volume, seeking, and pause/resume 
+playback. 
+For example :
+
+<audio controls>
+  <source src="audio.ogg" type="audio/ogg">
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+This will add the default audio controls to the element, allowing the user to play, pause, adjust the volume,
+and seek through the audio file.
+We can customize the audio controls using JavaScript and the HTMLMediaElement API. This allows you to build 
+your own audio player with custom design and functionality.
+
+loop
+The loop attribute specifies the audio to start from the beginning once it ends. 
+For example :
+
+<audio controls loop>
+  <source src="audio.ogg" type="audio/ogg">
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+This will cause the audio file to start over from the beginning when it reaches the end.
+
+
+The muted attribute sets the volume of the audio to 0. 
+For example :
+
+<audio controls muted>
+  <source src="audio.ogg" type="audio/ogg">
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+src
+The src attribute specifies the location of the audio file that should be played in the audio player. 
+For example :
+
+<audio src="/audios/sample.mp3" controls>
+</audio>
+Here, the audio element will create an audio player that will play the audio file located at /audios/sample.
+mp3
+
+Note: At least one src attribute or <source> tag is required for HTML video.
+
+preload
+The preload attribute specifies how the audio file should be loaded after the page loads for a better user 
+experience. It may have one of the following values:
+
+1. none: Indicates that the audio should not be preloaded. 
+For example :
+
+<audio src="song.mp3" preload="auto"></audio>
+2. metadata: Indicates that only audio metadata is fetched. 
+For example :
+
+<audio src="song.mp3" preload="metadata"></audio>
+3. audio: Indicates that the entire audio file will be loaded when the page loads. 
+For exampl :
+
+<audio src="song.mp3" preload="auto"></audio>
