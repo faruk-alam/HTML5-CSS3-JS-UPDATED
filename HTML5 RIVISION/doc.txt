@@ -93,7 +93,7 @@ Example:
 <hr>
 <i> <b> This is a bold and italicized text </b> </i>
 
-2)  Based on formation,HTML tags can be categorized into two types - 
+2)  Based on simatics,HTML tags can be categorized into two types - 
 Semantic Tag and Non-semantic Tag :
 
 Semantic Tags
