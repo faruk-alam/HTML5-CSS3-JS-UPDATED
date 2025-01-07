@@ -1,0 +1,43 @@
+Pseudo-classes :
+A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first 
+element of their type, or they are being hovered over by the mouse pointer. 
+
+Pseudo-classes are keywords that start with a colon.For example, :link is a pseudo-class.
+Types of Pseudo-Classes
+There are the following types of pseudo-classes in CSS:
+
+Structural pseudo-class: Selects elements based on their position in document such as :first-child, 
+:last-child, etc.
+Link pseudo-class: Selects the links based on their state such as :link, :visited, etc.
+UI pseudo-class: Selects the form elements based on their state such as :enabled, :disabled, etc.
+
+Structural Pseudo-Classes
+Structural pseudo-class selects elements based on their position in the document. There are following 
+structural pseudo-classes.
+
+CSS first-child Pseudo-Class :
+The first-child pseudo-class selector styles the first child of its parent element. 
+Here's the syntax:-
+selector : first-child {
+  /* styles */
+}
+
+pseudo-class  :is
+The :is pseudo-class takes a list of selector arguments and matches all elements that apply to any selector 
+in the list. 
+
+Here's the syntax:-
+:is(selector1, selector2, selector3) {
+  /* styles */
+}
+
+The CSS :has() pseudo-class is a relatively new feature that allows developers to select elements based on 
+their children. It is a powerful tool for more specific and dynamic styling and can be used in conjunction 
+with other pseudo-classes and selectors.
+
+The :has() pseudo-class is used to select parent elements that contain specific child elements. This allows 
+for conditional styling based on the presence or absence of certain children.
+
+Syntax:
+:has()
+

@@ -1,0 +1,11 @@
+/* :is */
+/* .isPseudo :is(section,article,span){
+    background-color: red;
+} */
+
+/* :has */
+
+div#div1 :has(h2){
+    background-color: grey;
+    color:brown;
+}

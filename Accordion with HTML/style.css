@@ -34,5 +34,6 @@ body{
     padding: 20px 30px;
 }
 .accordion summary{
+    list-style: none;
     padding: 10px 0px;  
 }

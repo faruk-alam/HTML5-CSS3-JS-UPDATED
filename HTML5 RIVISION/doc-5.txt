@@ -188,7 +188,8 @@ black">
 </svg>
 
 HTML Audio
-The HTML <audio> tag is used to embed a media player which supports audio playback into the HTML page. We use the HTML <audio> tag along with the <source> tag to add the audio player. For example,
+The HTML <audio> tag is used to embed a media player which supports audio playback into the HTML page.
+ We use the HTML <audio> tag along with the <source> tag to add the audio player. For example,
 
 <audio controls>
   <source src="audio.mp3" type="audio/mp3">
